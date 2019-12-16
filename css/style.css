@@ -321,3 +321,33 @@ textarea.form-control { height: inherit; }
   overflow: hidden;
   height: 375px
 }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 33.3%;
+  max-width: 33.3%;
+  padding: 0 20px;
+}
+
+.column img {
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
