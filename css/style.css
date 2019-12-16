@@ -306,7 +306,7 @@ textarea.form-control { height: inherit; }
 
 .block-38 .block-38-header img { width: 90px; border-radius: 50%; margin-bottom: 20px; object-fit: contain;}
 
-.fill {
+.img-cover-container-small {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -314,7 +314,10 @@ textarea.form-control { height: inherit; }
   height: 288px
 }
 
-.row {
+.img-cover-container-large {
   display: flex;
-  flex-wrap: wrap
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 375px
 }
