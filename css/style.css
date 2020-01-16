@@ -312,6 +312,9 @@ textarea.form-control { height: inherit; }
   align-items: center;
   overflow: hidden;
   height: 288px
+  /* width: 100%;
+  height: auto;
+  object-fit: cover; */
 }
 
 .img-cover-container-large {
