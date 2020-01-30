@@ -24,6 +24,12 @@ jQuery(document).ready(function($){
     return false;
   });
 
+  $('img.work-image-single').click(function(){
+  
+    window.open($(this)[0].src, '_blank')
+
+  });
+
   // Owl
   $('.wide-slider').owlCarousel({
     loop:true,
@@ -102,4 +108,17 @@ jQuery(document).ready(function($){
   		$('.js-templateux-menu').fadeIn(300);
   	}
   })
+
 });
+
+$(document).ready(
+  console.log(getUrlParameter("imgPath")),
+  $(".work-image-single").attr("src",getUrlParameter("imgPath"))
+);
+
+function getUrlParameter(name) {
+  name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+  var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+  var results = regex.exec(location.search);
+  return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+}
