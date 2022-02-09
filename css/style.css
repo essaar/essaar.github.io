@@ -266,7 +266,7 @@ templateux-section
 
 .tagcloud a { text-transform: uppercase; display: inline-block; padding: 4px 10px; margin-bottom: 7px; margin-right: 4px; border-radius: 4px; color: #000; border: 1px solid #ccc; font-size: 11px; }
 
-.tagcloud p { display: inline-block; padding: 4px 10px; margin-bottom: 4px; margin-right: 4px; border-radius: 4px; color: #000; border: 1px solid #ccc; font-size: 11px; }
+.tagcloud p { display: inline-block; padding: 4px 10px; margin-bottom: 7px; margin-right: 4px; border-radius: 4px; color: #000; border: 1px solid #ccc; font-size: 11px; }
 
 .tagcloud a:hover { border: 1px solid #000; }
 
