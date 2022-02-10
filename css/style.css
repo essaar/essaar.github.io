@@ -231,6 +231,8 @@ templateux-section
 
 .testimony blockquote p { color: #000; }
 
+.helper-text { font-size: 13px; color: #dc3545; text-align: center; }
+
 .testimony .author { color: #000; text-transform: uppercase; letter-spacing: .2em; }
 
 .work-detail { margin-bottom: 50px; }
@@ -320,7 +322,7 @@ templateux-section
 
 .block-38 .block-38-header .block-38-heading { font-size: 18px; color: #000; margin: 0; font-weight: 300; }
 
-.block-38 .block-38-header img { width: 90px; border-radius: 50%; margin-bottom: 20px; object-fit: contain;}
+.block-38 .block-38-header img { width: 90px; border-radius: 10%; margin-bottom: 5px; object-fit: contain;}
 
 .img-cover-container-small {
   display: flex;
@@ -394,8 +396,7 @@ templateux-section
 	max-height: 100%;
 	max-width: 100%;
 	display: block;
-	margin: auto;
-}.block-38 .block-38-header img { width: 90px; border-radius: 50%; margin-bottom: 20px; object-fit: contain;}
+}.block-38 .block-38-header img { width: 90px; border-radius: 10%; margin-bottom: 5px; object-fit: contain;}
 
 .img-cover-container-small {
   display: flex;
