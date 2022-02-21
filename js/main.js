@@ -113,7 +113,7 @@ jQuery(document).ready(function($){
 
 $(document).ready(
   console.log(getUrlParameter("imgPath")),
-  $(".work-image-single").attr("src",getUrlParameter("imgPath"))
+  document.getElementById("singleimage").src = getUrlParameter("imgPath")
 );
 
 function getUrlParameter(name) {
