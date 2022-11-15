@@ -67,16 +67,48 @@
         <div class="row justify-content-center">
           <div class="col-md-10">
 
+            <!-- ZenTangler -->
+            <div class="templateux-section" >
+              <div class="row work-detail">
+                <div class="col-md-6 mb-3">
+                  <h2>ZenTangler</h2>
+                </div>
+                <div class="col-md-11">
+                  <p>
+                    A <b>Maya plug-in authoring tool</b> to <b>procedurally</b> generate Tangle textures based on the 
+                    <a href="https://pellacini.di.uniroma1.it/publications/gtangle16/gtangle16-paper.pdf" target="_blank">2016 SIGGRAPH paper</a> 
+                    <i>"gTangle: a Grammar for the Procedural Generation of Tangle Patterns"</i> by Christian Santoni and Fabio Pellacini.
+                     This was a group project with the goal to bring the expressive value of tangles into the Maya 3D modeling software using <b>grammars</b>.
+                  </p>
+                  <div class="tagcloud">
+                      <p class="tag-cloud-link">Maya</p>
+                      <p class="tag-cloud-link">Python</p>
+                      <p class="tag-cloud-link">PyMEL</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-11 text-center" data-aos="fade-up">
+                  <iframe width="800" height="450" src="https://www.youtube.com/embed/bw4V9PtRPHA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+
             <!-- Path Tracer -->
-            <!-- <div class="templateux-section" >
+            <div class="templateux-section" >
               <div class="row work-detail">
                 <div class="col-md-6 mb-3">
                   <h2>Monte Carlo Path Tracer</h2>
                 </div>
                 <div class="col-md-11">
-                  <p>3D Sandbox game based on Minecraft. Implemented features:
-                    <b>camera</b>, <b>player physics</b>, <b>noise based terrain generation</b> and <b>asset placement</b>,
-                    <b>procedural sky box</b> with day/night cycle and <b>post-process effects</b> like camera overlay and minimap.</p>
+                  <p>Implemented a CPU & a GPU version of the Monte Carlo Path Trace based on the <b>Light Transport Equation</b> using the Physically Based Rendering: From Theory To Implementation book.
+                    Features implemented:
+                    <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp-&nbsp&nbsp<b>Full Lighting integrator</b>, 
+                    <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp-&nbsp&nbsp<b>Multiple Importance Sampling</b>, 
+                    <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp-&nbsp&nbspdiffused, specular, transmissive & microfacet <b>BSDFs</b>, 
+                    <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp-&nbsp&nbsp<b>thin lens camera</b>, 
+                    <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp-&nbsp&nbsparea, point, and spot <b>lights</b>.</p>
                   <div class="tagcloud">
                       <p class="tag-cloud-link">C++</p>
                       <p class="tag-cloud-link">OpenGL</p>
@@ -87,11 +119,74 @@
               </div>
 
               <div class="row">
-                <div class="col-md-11 text-center" data-aos="fade-up">
-                  <iframe width="800" height="450" src="https://www.youtube.com/embed/_ooa9crWf24" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="col-md-4" data-aos="fade-up">
+                  <p class="text-center"><img src="images/graphics/twoLights_full_400.png" alt="Image placeholder" class="img-fluid"></p>
+                </div>
+                <div class="col-md-4" data-aos="fade-up">
+                  <p class="text-center"><img src="images/graphics/roughMirrorUniform_full.png" alt="Image placeholder" class="img-fluid"></p>
+                </div>
+                <div class="col-md-4" data-aos="fade-up">
+                  <p class="text-center"><img src="images/graphics/cornellBoxLensCam.png" alt="Image placeholder" class="img-fluid"></p>
                 </div>
               </div>
-            </div> -->
+              <div class="row">
+                <div class="col-md-4" data-aos="fade-up">
+                  <p class="text-center"><img src="images/graphics/custom_full_400.png" alt="Image placeholder" class="img-fluid"></p>
+                </div>
+                <div class="col-md-4" data-aos="fade-up">
+                  <p class="text-center"><img src="images/graphics/custom2_naive_1600.png" alt="Image placeholder" class="img-fluid"></p>
+                </div>
+                <div class="col-md-4" data-aos="fade-up">
+                  <p class="text-center"><img src="images/graphics/custom3_full_1600.png" alt="Image placeholder" class="img-fluid"></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- PBR Shader -->
+            <div class="templateux-section" >
+              <div class="row work-detail">
+                <div class="col-md-6 mb-3">
+                  <h2>Real-Time Physically Based Rendering</h2>
+                </div>
+                <div class="col-md-11">
+                  <p>Implemented the <b>Real-time Physically-Based Rendering</b> model with <b>Image-Based lighting</b> based on <a href="https://cdn2.unrealengine.com/Resources/files/2013SiggraphPresentationsNotes-26915738.pdf" target="_blank">Unreal Engine Real Shading</a>.
+                    Features implemented:
+                    <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp-&nbsp&nbsp<b>Cook-Torrance microfacet</b> models, 
+                    <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp-&nbsp&nbspvariable albedo, <b>roughness</b>, and <b>metal to plastic-ness</b>, 
+                    <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp-&nbsp&nbsp<b>normal and displacement maps</b>, 
+                    <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp-&nbsp&nbsp<b>image based lighting</b> using diffuse and glossy convolutions.</p>
+                  <div class="tagcloud">
+                      <p class="tag-cloud-link">C++</p>
+                      <p class="tag-cloud-link">OpenGL</p>
+                      <p class="tag-cloud-link">GLSL</p>
+                      <p class="tag-cloud-link">Qt</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-4" data-aos="fade-up">
+                  <p class="text-center"><img src="images/graphics/pbrRender1.png" alt="Image placeholder" class="img-fluid"></p>
+                </div>
+                <div class="col-md-4" data-aos="fade-up">
+                  <p class="text-center"><img src="images/graphics/pbrRender2.png" alt="Image placeholder" class="img-fluid"></p>
+                </div>
+                <div class="col-md-4" data-aos="fade-up">
+                  <p class="text-center"><img src="images/graphics/pbrRender3.png" alt="Image placeholder" class="img-fluid"></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4" data-aos="fade-up">
+                  <p class="text-center"><img src="images/graphics/pbrRender4.png" alt="Image placeholder" class="img-fluid"></p>
+                </div>
+                <div class="col-md-4" data-aos="fade-up">
+                  <p class="text-center"><img src="images/graphics/pbrRender5.png" alt="Image placeholder" class="img-fluid"></p>
+                </div>
+                <div class="col-md-4" data-aos="fade-up">
+                  <p class="text-center"><img src="images/graphics/pbrRender6.png" alt="Image placeholder" class="img-fluid"></p>
+                </div>
+              </div>
+            </div>
 
             <!-- Minecraft -->
             <div class="templateux-section" >
@@ -101,7 +196,7 @@
                   <!-- <span class=caption-black>Interactive Computer Graphics @ Penn </span> -->
                 </div>
                 <div class="col-md-11">
-                  <p>3D Sandbox game based on Minecraft. Implemented features:
+                  <p>3D Sandbox game group project based on Minecraft. Implemented features:
                     <b>camera</b>, <b>player physics</b>, <b>noise based terrain generation</b> and <b>asset placement</b>,
                     <b>procedural sky box</b> with day/night cycle and <b>post-process effects</b> like camera overlay and minimap.</p>
                   <div class="tagcloud">
@@ -116,6 +211,35 @@
               <div class="row">
                 <div class="col-md-11 text-center" data-aos="fade-up">
                   <iframe width="800" height="450" src="https://www.youtube.com/embed/_ooa9crWf24" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+
+            <!-- Procedural -->
+            <div class="templateux-section" >
+              <div class="row work-detail">
+                <div class="col-md-6 mb-3">
+                  <a href="https://ess-aar.github.io/CIS5660-hw02-landscape/" target="_blank">
+                    <span class="h2">Procedural Signed Distance Field Terrain &nbsp</span><i class="fa fa-external-link"></i>
+                  </a>
+                </div>
+                <div class="col-md-11">
+                  <p>
+                    Using <b>signed distance field</b> and <b>fractional Brownian motion noise</b>, I created an an alien canyon-like landscape with procedural coloring, animated water, and procedural sky with scattered light & some stars. More details on my <a href="https://github.com/ess-aar/CIS5660-hw02-landscape" target="_blank">Github page</a>.
+                  </p>
+                  <div class="tagcloud">
+                      <p class="tag-cloud-link">WebGL</p>
+                      <p class="tag-cloud-link">TypeScript</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6" data-aos="fade-up">
+                  <p class="text-center"><img src="images/graphics/landscape2.jpg" alt="Image placeholder" class="img-fluid"></p>
+                </div>
+                <div class="col-md-6" data-aos="fade-up">
+                  <p class="text-center"><img src="images/graphics/landscape3.jpg" alt="Image placeholder" class="img-fluid"></p>
                 </div>
               </div>
             </div>
@@ -292,9 +416,9 @@
           <!-- </div> -->
           <div class="col-md-12 text-md-center text-center footer-social">
             <a href="https://www.linkedin.com/in/rathoresakshi/" class="p-3"><span class="icon-linkedin2"></span></a>
-            <!-- <a href="https://www.linkedin.com/in/rathoresakshi/" class="p-3"><span class="fa fa-github"></span></a> -->
+            <a href="https://github.com/ess-aar" class="p-3"><span class="fa fa-github"></span></a>
             <a href="https://www.instagram.com/transientseities/" class="p-3"><i class="fa fa-instagram"></i></a>
-            <a href="https://www.facebook.com/sakshi.rathore.13" class="p-3"><span class="icon-facebook2"></span></a>
+            <!-- <a href="https://www.facebook.com/sakshi.rathore.13" class="p-3"><span class="icon-facebook2"></span></a> -->
           </div>
         </div>
       </div>
